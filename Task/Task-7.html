@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7</title>
+</head>
+<body>
+    <h1>Slide Effects</h1>
+    <br><br>
+    <button class="Up">SlideUp</button>
+    <button class="Down">SlideDown</button>
+    <button class="Toggle">Toggle</button>
+    <br><br>
+
+    <div class="Box"></div>
+    <br><br>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $(".Box").css({
+            width:"500px",
+            height:"500px",
+            border:"2px solid black",
+            backgroundColor:"crimson"
+        })
+    </script>
+
+    <script>
+        $(".Up").click(function() {
+            $(".Box").slideUp();
+        });
+
+        $(".Down").click(function() {
+            $(".Box").slideDown();
+        });
+
+        $(".Toggle").click(function() {
+            $(".Box").slideToggle();
+        });
+    </script>
+</body>
+</html>

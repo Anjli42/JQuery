@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-4</title>
+  </head>
+  <body>
+
+    <h1>Hover & Animate Effects</h1>
+    <br><br><br>
+    <div class="box">This Is The Magic Of jQuery</div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script>
+      $("body").css({
+        backgroundColor: "skyblue",
+        textAlign: "center",
+      });
+      $("h1").css({
+        fontSize: "50px",
+        color: "crimson",
+      });
+      $(".box").css({
+        fontSize: "30px",
+        color: "white",
+        backgroundColor: "blueviolet",
+        padding: "10px 30px",
+        margin: "10px 30px",
+        borderRadius: "20px",
+        height: "200px",
+      });
+    </script>
+
+
+    <script>
+      $(document).ready(function () {
+
+        $(".box").hover(function () {
+          $(".box").animate({height: '300px', width: '500px'});
+            $(".box").css({backgroundColor: 'brown', color: 'black'});
+
+        });
+
+        $("h1").hover(function () {
+            $("h1").css({fontSize: '80px', color: 'blue'});
+
+        });
+   
+      });
+    </script>
+  </body>
+</html>
